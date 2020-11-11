@@ -104,7 +104,6 @@ Floyd_g=ggplot()+
         axis.ticks=element_blank())
 
 Allison_g=ggplot()+
-  geom_sf(data=Allison_rain)+
   geom_sf(data=Allison_rain_limit,mapping=aes(fill=precip))+
   scale_fill_steps(low='white',high='red', name='Rainfall (mm)')+
   geom_path(data=Allison_track,mapping=aes(x=longitude,y=latitude))+
